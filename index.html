@@ -1518,7 +1518,7 @@ setInterval(() =>{
     if(prevStateWifi == nowStateWifi){
       countWf++
       console.log("mat ket noi");
-      if(countWf == 5){
+      if(countWf >8){
           document.querySelector(".boxIconConnect").classList.remove("hide")
           document.querySelector(".layout_lostConnect").classList.remove("hide")
           countWf=0;  
