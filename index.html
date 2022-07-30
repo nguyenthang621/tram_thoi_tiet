@@ -1653,7 +1653,7 @@ UpdateStateWiFi()
 
 // function check state rain:
 function checkState(state){
-      if(state == 1 && prevStateRain !==state ){
+      if(state == 0 && prevStateRain !==state ){
         // toast({  
         // type:"error",
         // title:"Thông báo mưa",
@@ -1664,7 +1664,7 @@ function checkState(state){
         iconRain.innerHTML = `<i class="fa-solid fa-cloud-rain"></i>`
         $(".fa-cloud-rain").style.color = `#00bcd4`
       } 
-       else if(state == 0 && prevStateRain !==state){
+       else if(state == 1 && prevStateRain !==state){
 
           // toast({  
           // type:"check",
